@@ -12,7 +12,7 @@
 */
 
 // Увімкнути/вимкнути FLS (Full Logging System) (в роботі)
-window["FLS"] = true;
+window['FLS'] = true;
 
 // Підключення основного файлу стилів
 import "../scss/style.scss";
@@ -41,74 +41,74 @@ flsFunctions.isWebp();
 // import './libs/wNumb.min.js';
 
 /*
-Модуль "Спойлеры"
-Документация: https://template.fls.guru/template-docs/modul-spojlery.html
+Модуль "Спойлери"
+Документація: https://template.fls.guru/template-docs/modul-spojlery.html
 Сніппет (HTML): spollers
 */
 // flsFunctions.spollers();
 
 /*
-Модуль "Табы"
-Документация: https://template.fls.guru/template-docs/modul-taby.html
+Модуль "Таби"
+Документація: https://template.fls.guru/template-docs/modul-taby.html
 Сніппет (HTML): tabs
 */
 //flsFunctions.tabs();
 
 /*
-Модуль "Показать еще"
-Документация: https://template.fls.guru/template-docs/modul-pokazat-eshhjo.html
+Модуль "Показати ще"
+Документація: https://template.fls.guru/template-docs/modul-pokazat-eshhjo.html
 Сніппет (HTML): showmore
 */
 // flsFunctions.showMore();
 
 /*
-Модуль "До/После"
-Документация: https://template.fls.guru/template-docs/modul-do-pislia.html
+Модуль "До/Після"
+Документація: https://template.fls.guru/template-docs/modul-do-pislia.html
 Сніппет (HTML): ba
 */
 // import './libs/beforeafter.js';
 
 /*
-Модуль "Эфект хвиль"
+Модуль "Ефект хвиль"
 Документация: https://template.fls.guru/template-docs/modul-ripple-effect.html
 Сниппет (HTML):
 */
 // flsFunctions.rippleEffect();
 
 /*
-Модуль "Кастомный курсор"
+Модуль "Кастомний курсор"
 Документация:
 Сниппет (HTML):
 */
 // flsFunctions.customCursor(true);
 
 /*
-Модуль "Бегучий рядок" (Alpha)
+Модуль "Бігучий рядок" (Alpha)
 Документация:
 Сниппет (HTML):
 */
 // import './libs/keywords.js'
 
 /*
-Модуль "Попапы"
-Документация: https://template.fls.guru/template-docs/funkcional-popup.html
+Модуль "Попапи"
+Документація: https://template.fls.guru/template-docs/funkcional-popup.html
 Сніппет (HTML): pl, pop
 */
 // import './libs/popup.js'
 
 /*
-Модуль паралакс мышью
-Документация: https://template.fls.guru/template-docs/modul-animacii-parallaks-obektov-pri-dvizhenii-myshi.html
+Модуль паралаксу мишею
+Документація: https://template.fls.guru/template-docs/modul-animacii-parallaks-obektov-pri-dvizhenii-myshi.html
 */
 // import './libs/parallax-mouse.js'
 
 // ========================================================================================================================================================================================================================================================
-// Робота с формами ========================================================================================================================================================================================================================================================
+// Робота з формами ========================================================================================================================================================================================================================================================
 // ========================================================================================================================================================================================================================================================
 import * as flsForms from "./files/forms/forms.js";
 
-/* Робота с полями формы */
-/* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
+/* Робота з полями форми */
+/* Документація: https://template.fls.guru/template-docs/rabota-s-formami.html */
 /*
 flsForms.formFieldsInit({
 	viewPass: false,
@@ -116,7 +116,7 @@ flsForms.formFieldsInit({
 });
 */
 /* Надсилання форми */
-/* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
+/* Документація: https://template.fls.guru/template-docs/rabota-s-formami.html */
 // flsForms.formSubmit();
 
 /* Модуль форми "кількість" */
@@ -134,8 +134,8 @@ flsForms.formFieldsInit({
 /* (У роботі) Модуль роботи з масками.*/
 /*
 Підключення та налаштування виконується у файлі js/files/forms/inputmask.js
-Документация по роботі у шаблоні:
-Документация плагіна: https://github.com/RobinHerbots/inputmask
+Документація по роботі у шаблоні:
+Документація плагіна: https://github.com/RobinHerbots/inputmask
 Сніппет(HTML):
 */
 // import "./files/forms/inputmask.js";
@@ -143,8 +143,8 @@ flsForms.formFieldsInit({
 /* Модуль роботи з повзунком */
 /*
 Підключення та налаштування виконується у файлі js/files/forms/range.js
-Документация по роботі у шаблоні:
-Документация плагіна: https://refreshless.com/nouislider/
+Документація по роботі у шаблоні:
+Документація плагіна: https://refreshless.com/nouislider/
 Сніппет (HTML): range
 */
 // import "./files/forms/range.js";
@@ -152,8 +152,8 @@ flsForms.formFieldsInit({
 /* Модуль роботи з підказками (tippy) */
 /*
 Підключення плагіна Tippy.js та налаштування виконується у файлі js/files/tippy.js
-Документация по роботі у шаблоні:
-Документация плагіна: https://atomiks.github.io/tippyjs/
+Документація по роботі у шаблоні:
+Документація плагіна: https://atomiks.github.io/tippyjs/
 Сніппет (HTML): tip (додає атрибут з підказкою для html тега)
 */
 // import "./files/tippy.js";
@@ -163,8 +163,8 @@ flsForms.formFieldsInit({
 // ========================================================================================================================================================================================================================================================
 /*
 Налаштування підключення плагіна слайдера Swiper та нових слайдерів виконується у файлі js/files/sliders.js
-Документация по роботі у шаблоні: https://template.fls.guru/template-docs/rabota-so-slajderom-swiper.html
-Документация плагіна: https://swiperjs.com/
+Документація по роботі у шаблоні: https://template.fls.guru/template-docs/rabota-so-slajderom-swiper.html
+Документація плагіна: https://swiperjs.com/
 Сніппет(HTML): swiper
 */
 import "./files/sliders.js";
@@ -175,30 +175,30 @@ import "./files/sliders.js";
 
 /*
 Зміна дизайну скроллбару
-Документация по роботі у шаблоні: У HTML додаємо до блоку атрибут data-simplebar
-Документация плагіна: https://github.com/Grsmto/simplebar/tree/master/packages/simplebar
+Документація по роботі у шаблоні: У HTML додаємо до блоку атрибут data-simplebar
+Документація плагіна: https://github.com/Grsmto/simplebar/tree/master/packages/simplebar
 Сніппет(HTML): 
 */
 // import './files/scroll/simplebar.js';
 
 // Ліниве (відкладене) завантаження картинок
-// Документация по роботі у шаблоні: https://template.fls.guru/template-docs/modul-lenivaya-podgruzka-lazy-loading.html
-// Документация плагіна: https://github.com/verlok/vanilla-lazyload
+// Документація по роботі у шаблоні: https://template.fls.guru/template-docs/modul-lenivaya-podgruzka-lazy-loading.html
+// Документація плагіна: https://github.com/verlok/vanilla-lazyload
 // Сніппет(HTML):
 // import './files/scroll/lazyload.js';
 
 // Спостерігач за об'єктами з атрибутом data-watch
-// Документация: https://template.fls.guru/template-docs/modul-nabljudatel-za-poyavleniem-elementa-pri-skrolle.html
+// Документація: https://template.fls.guru/template-docs/modul-nabljudatel-za-poyavleniem-elementa-pri-skrolle.html
 // Сніппет(HTML):
 // import './libs/watcher.js'
 
 // Модуль поекранної прокрутки
-// Документация: https://template.fls.guru/template-docs/modul-poekrannoj-prokrutki-stranicy-fullpage.html
+// Документація: https://template.fls.guru/template-docs/modul-poekrannoj-prokrutki-stranicy-fullpage.html
 // Сніппет(HTML):
 // import './libs/fullpage.js'
 
 // Модуль паралаксу
-// Документация: https://template.fls.guru/template-docs/paralaks-pri-skroli.html
+// Документація: https://template.fls.guru/template-docs/paralaks-pri-skroli.html
 // Сніппет(HTML):
 // import './libs/parallax.js'
 
@@ -206,15 +206,15 @@ import "./files/sliders.js";
 import * as flsScroll from "./files/scroll/scroll.js";
 
 // Плавна навігація по сторінці
-// Документация: https://template.fls.guru/template-docs/modul-plavnoj-navigacii-po-stranice.html
+// Документація: https://template.fls.guru/template-docs/modul-plavnoj-navigacii-po-stranice.html
 // flsScroll.pageNavigation();
 
 // Функціонал додавання класів до хедеру під час прокручування
-// Документация: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
+// Документація: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
 // flsScroll.headerScroll();
 
 // Модуль анімація цифрового лічильника
-// Документация: https://template.fls.guru/template-docs/modul-animacii-cifrovogo-lichilnika.html
+// Документація: https://template.fls.guru/template-docs/modul-animacii-cifrovogo-lichilnika.html
 // Сніппет(HTML):
 // flsScroll.digitsCounter();
 
@@ -222,8 +222,8 @@ import * as flsScroll from "./files/scroll/scroll.js";
 // Галерея ========================================================================================================================================================================================================================================================
 // ========================================================================================================================================================================================================================================================
 /*
-Документация по роботі у шаблоні: 
-Документация плагіна: https://www.lightgalleryjs.com/docs/
+Документація по роботі у шаблоні: 
+Документація плагіна: https://www.lightgalleryjs.com/docs/
 Сніппет(HTML):
 */
 // import "./files/gallery.js";
@@ -232,8 +232,8 @@ import * as flsScroll from "./files/scroll/scroll.js";
 // Масонрі сітка ========================================================================================================================================================================================================================================================
 // ========================================================================================================================================================================================================================================================
 /*
-Документация по роботі у шаблоні:
-Документация плагіна: 
+Документація по роботі у шаблоні:
+Документація плагіна: 
 Сніппет(HTML):
 */
 // import "./files/isotope.js";
@@ -243,7 +243,7 @@ import * as flsScroll from "./files/scroll/scroll.js";
 // ========================================================================================================================================================================================================================================================
 
 /* Динамічний адаптив */
-// Документация: https://template.fls.guru/template-docs/dinamicheskij-adaptiv.html
+// Документація: https://template.fls.guru/template-docs/dinamicheskij-adaptiv.html
 // import "./libs/dynamic_adapt.js";
 
 // ========================================================================================================================================================================================================================================================

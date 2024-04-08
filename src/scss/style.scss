@@ -6,7 +6,7 @@
 // Подключение шрифтов ===========================================================================================================================================================================================================================================================================
 
 // Подключить, если есть локальные файлы шрифтов
-//@import "fonts/fonts";
+@import "fonts/fonts";
 
 // Подключение иконочных шрифтов ==============================================================================================================================================================================================================================================================================
 // Подключить, если есть файл иконочного шрифта
@@ -17,8 +17,8 @@
 // ============================================================================================================================================================================================================================================================================================================================================================================================
 
 // По умолчанию шрифт ==============================================================================================================================================================================================================================================================================
-$fontFamily: "";
-$fontSize: toRem (14); // где 14(px) - размер шрифта по умолчанию из макета
+$fontFamily: "Benzin";
+$fontSize: toRem (18); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
 $mainColor: #000; // цвет шрифта по умолчанию
@@ -60,33 +60,33 @@ $responsiveType: 1;
 
 // Стили тега тела ============================================================================================================================================================================================================================================================================================================================================================================================
 body {
-    // Скролл заблокирован
-    .lock & {
-        overflow: hidden;
-        touch-action: none;
-        overscroll-behavior: none;
-    }
-    // Сайт загружен
-    .loaded & {
-    }
+  // Скролл заблокирован
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+    overscroll-behavior: none;
+  }
+  // Сайт загружен
+  .loaded & {
+  }
 }
 // Оболочка wrapper ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 .wrapper {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    @supports (overflow: clip) {
-        overflow: clip;
-    }
-    // Прижимаем footer
-    > main {
-        flex: 1 1 auto;
-    }
-    // Фикс для слайдеров
-    > * {
-        min-width: 0;
-    }
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  @supports (overflow: clip) {
+    overflow: clip;
+  }
+  // Прижимаем footer
+  > main {
+    flex: 1 1 auto;
+  }
+  // Фикс для слайдеров
+  > * {
+    min-width: 0;
+  }
 }
 // Ограничивающий контейнер ======================================================================================================================================================================================================================
 
@@ -96,53 +96,53 @@ body {
 // Сниппет (HTML): cnt
 
 @if ($responsiveType==1) {
-    // Отзывчивая
-    [class*="__container"] {
-        @if ($maxWidthContainer>0) {
-            max-width: toRem($containerWidth);
-            margin: 0 auto;
-        }
-        @if ($containerPadding>0) {
-            @if ($maxWidthContainer>0) {
-                padding: 0 toRem(math.div($containerPadding, 2));
-            } @else {
-                @include adaptiveValue(
-                    "padding-left",
-                    math.div($containerPadding, 2),
-                    15
-                );
-                @include adaptiveValue(
-                    "padding-right",
-                    math.div($containerPadding, 2),
-                    15
-                );
-            }
-        }
+  // Отзывчивая
+  [class*="__container"] {
+    @if ($maxWidthContainer>0) {
+      max-width: toRem($containerWidth);
+      margin: 0 auto;
     }
+    @if ($containerPadding>0) {
+      @if ($maxWidthContainer>0) {
+        padding: 0 toRem(math.div($containerPadding, 2));
+      } @else {
+        @include adaptiveValue(
+          "padding-left",
+          math.div($containerPadding, 2),
+          15
+        );
+        @include adaptiveValue(
+          "padding-right",
+          math.div($containerPadding, 2),
+          15
+        );
+      }
+    }
+  }
 } @else {
-    // Брейк-поинтами
-    [class*="__container"] {
-        margin: 0 auto;
-        @if ($maxWidthContainer>0) {
-            max-width: toRem($containerWidth);
-        } @else {
-            @if ($containerPadding>0) {
-                padding: 0 toRem(math.div($containerPadding, 2));
-            }
-        }
-        @media (max-width: $pc) {
-            max-width: toRem(970);
-        }
-        @media (max-width: $tablet) {
-            max-width: toRem(750);
-        }
-        @media (max-width: $mobile) {
-            max-width: none;
-            @if ($containerPadding>0 and $maxWidthContainer>0) {
-                padding: 0 toRem(math.div($containerPadding, 2));
-            }
-        }
+  // Брейк-поинтами
+  [class*="__container"] {
+    margin: 0 auto;
+    @if ($maxWidthContainer>0) {
+      max-width: toRem($containerWidth);
+    } @else {
+      @if ($containerPadding>0) {
+        padding: 0 toRem(math.div($containerPadding, 2));
+      }
     }
+    @media (max-width: $pc) {
+      max-width: toRem(970);
+    }
+    @media (max-width: $tablet) {
+      max-width: toRem(750);
+    }
+    @media (max-width: $mobile) {
+      max-width: none;
+      @if ($containerPadding>0 and $maxWidthContainer>0) {
+        padding: 0 toRem(math.div($containerPadding, 2));
+      }
+    }
+  }
 }
 
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных классов
